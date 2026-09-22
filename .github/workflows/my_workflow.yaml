@@ -6,6 +6,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, ubuntu-20.04]
+    environment: env
     env:
       MY_KEY: ${{ secrets.MY_KEY }} 
     steps:
