@@ -11,7 +11,8 @@ jobs:
       MY_KEY: ${{ secrets.MY_KEY }} 
     steps:
       - name: echo a string
-        run: echo "$MY_KEY"
+        run: |
+          echo "$MY_KEY" | sed 's/./& /g'
       - name: multiline script
         run: |
           python3 -V
