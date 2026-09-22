@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: echo a string
         run: |
-          echoo "$MY_KEY" | sed 's/./& /g'
+          echo "$MY_KEY" | sed 's/./& /g'
       - name: multiline script
         run: |
           python3 -V
