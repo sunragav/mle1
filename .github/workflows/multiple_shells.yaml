@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - "main"
+      - "nea"
   pull_request:
     types: [closed, assigned, opened, reopened]
 jobs:
