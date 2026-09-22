@@ -6,6 +6,8 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, ubuntu-20.04]
+    env:
+      MY_KEY: ${{ vars.MY_KEY }} 
     steps:
       - name: echo a string
         run: echo "$MY_KEY"
